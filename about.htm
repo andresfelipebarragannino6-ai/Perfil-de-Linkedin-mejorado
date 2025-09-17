@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!-- Indica al navegador que el documento está escrito en HTML5 -->
+<html lang="es"> <!-- Define el inicio del documento y el idioma principal: español -->
+<head> <!-- Sección de cabecera con información sobre la página -->
+    <meta charset="UTF-8"> <!-- Codificación UTF-8 para mostrar tildes, ñ y caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escala la página en móviles -->
+    <title>Portafolio</title> <!-- Título que se muestra en la pestaña del navegador -->
+    <link rel="stylesheet" href="./style/style.css"> <!-- Como se creo una carpeta se accede a esa carpeta que es style para luego enlazarla al archivo CSS externo con los estilos -->
+</head> <!-- Fin de la cabecera -->
+<body> <!-- Inicio del cuerpo visible de la página -->
+    <header class="header"> <!--Este elemento se utiliza para poder aplicar un bloque en HTML que permita definir el encabecado de lapágina web, pero se establece una clase que se utilizara en el CSS-->
+        <nav class="header__menu"> <!--Se crea un elemento que va a contener la parte superior de la página que en este caso se agrego las secciones de menu y sobre mí, pero se puede adicionar más secciones, pero se declara la clase que se va a utilizar en el CSS-->
+            <a class="header__menu__link" href="index.html">Home</a> <!--Dentro de la navegación, que se establece el enlace de la sección del menú principal y se declara la clase que se utilizara en el CSS-->
+            <a class="header__menu__link" href="about.htm">Sobre mi</a> <!--Dentro de la navegación, que se establece el enlace de la sección sobre mi y se declara la clase que se utilizara en el CSS-->
+        </nav> <!--Se cierra la sección que permitira navegar por las secciones de menu principal y sobre mi-->
+    </header> <!--Se cierra la sección que permite establecer el navegamiento de las dos secciones-->
+
+   <main class="presentacion"> <!-- Contenedor principal de la presentación -->
+        <section class="presentacion__contenido"> <!-- Sección de contenido dentro del main -->
+            
+            <!-- Título principal -->
+            <h1 class="presentacion__contenido__titulo">Sobre mi</h1> <!--Se establece una clase que va a ser llamada en el código de CSS para el estilo--> 
+            <!-- Párrafo con su clase para aplicar estilo desde CSS -->
+            <p class="presentacion__contenido__parrafo"> <!--Se establece una clase que va a ser llamada en el código de CSS para el estilo-->
+               Me llama Andrés Felipe Barragán Niño, soy estudiante de Ingeniería Industrial e Ingeniería en Automatización, actualmente en séptimo semestre de ambas carreras, 
+               con un fuerte interés en integrar el diseño, la programación y la optimización de procesos productivos mediante soluciones tecnológicas eficientes. 
+               Me apasiona la ingeniería de control y el desarrollo de sistemas de potencia, así como la implementación de sistemas automatizados a través de PLC y diversos lenguajes de programación, 
+               aplicando mis conocimientos tanto en entornos virtuales como en el análisis físico de los sistemas. Mi formación dual me permite abordar los procesos industriales con una visión integral: 
+               desde la planificación y organización para optimizar recursos, hasta el diseño e implementación de soluciones de automatización que mejoran la productividad y la calidad. Con estas competencias, 
+               me caracterizo por buscar constantemente la eficiencia operativa, el aprovechamiento de la tecnología y la innovación en el diseño de procesos, con el propósito de aportar valor agregado a las organizaciones 
+               mediante proyectos sólidos, escalables y orientados a resultados.</p>
+            <!-- Párrafo con su clase para aplicar estilo desde CSS -->
+               <p class="presentacion__contenido__parrafo"> <!--Se establece una clase que va a ser llamada en el código de CSS para el estilo-->
+               Por un lado, la Ingeniería Industrial me ha brindado las bases para comprender y rediseñar procesos productivos, gestionar recursos de manera estratégica y garantizar que cada etapa del flujo operativo esté orientada a la eficiencia, 
+               la calidad y la satisfacción del cliente. Por otro lado, la Ingeniería en Automatización me ha formado en el diseño e implementación de sistemas de control y potencia, en la programación de PLC 
+               y en la aplicación de tecnologías que permiten llevar la operación a un nivel superior de precisión, confiabilidad y escalabilidad. Esta combinación de conocimientos me permite no solo analizar un proceso desde la perspectiva de costos,
+               tiempos y productividad, sino también transformarlo mediante soluciones de automatización que aseguren su sostenibilidad y competitividad en el mercado, integrando así lo mejor de ambas disciplinas para generar un impacto real en la industria.</p>
+        </section><!-- Fin de la sección de contenido -->
+        <!-- Imagen representativa -->
+        <img class="presentacion__imagen" src="./assets/Imagen.png" alt="Imagen de Andrés Felipe Barragán Niño trabajando"> <!-- <img> inserta una imagen en la página. - src indica la ubicación del archivo (en este caso, "Imagen.png"). - alt proporciona un texto alternativo que describe la imagen (muy importante para accesibilidad y SEO). --> 
+    </main> <!-- Fin del contenido principal -->
+    <footer class="footer"> <!--Es la etiqueta que se declara en el HTML para que represente la sección que va a representar el pie de página de la página web, pero se establece una clase que se utilizara en el CSS-->
+       <p>Desarrollado por Andés Felipe Barragán Niño</p> <!--Se establece una clase que va a ser llamada en el código de CSS para el estilo--> 
+    </footer> <!--Termina la etiqueta que se declara en el HTML para representar la sección que va a representar el pie de página de la página web--> 
+</body> <!-- Fin del cuerpo -->
+</html> <!-- Fin del documento HTML -->

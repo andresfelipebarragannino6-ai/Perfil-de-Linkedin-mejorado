@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!-- Indica al navegador que el documento está escrito en HTML5 -->
+<html lang="es"> <!-- Define el inicio del documento y el idioma principal: español -->
+<head> <!-- Sección de cabecera con información sobre la página -->
+    <meta charset="UTF-8"> <!-- Codificación UTF-8 para mostrar tildes, ñ y caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escala la página en móviles -->
+    <title>Portafolio</title> <!-- Título que se muestra en la pestaña del navegador -->
+    <link rel="stylesheet" href="./style/style.css"> <!-- Como se creo una carpeta se accede a esa carpeta que es style para luego enlazarla al archivo CSS externo con los estilos -->
+</head> <!-- Fin de la cabecera -->
+
+<body> <!-- Inicio del cuerpo visible de la página -->
+    <header class="header"> <!--Este elemento se utiliza para poder aplicar un bloque en HTML que permita definir el encabecado de lapágina web, pero se establece una clase que se utilizara en el CSS-->
+        <nav class="header__menu"> <!--Se crea un elemento que va a contener la parte superior de la página que en este caso se agrego las secciones de menu y sobre mí, pero se puede adicionar más secciones, pero se declara la clase que se va a utilizar en el CSS-->
+            <a class="header__menu__link" href="index.html">Home</a> <!--Dentro de la navegación, que se establece el enlace de la sección del menú principal y se declara la clase que se utilizara en el CSS-->
+            <a class="header__menu__link" href="about.htm">Sobre mi</a> <!--Dentro de la navegación, que se establece el enlace de la sección sobre mi y se declara la clase que se utilizara en el CSS-->
+        </nav> <!--Se cierra la sección que permitira navegar por las secciones de menu principal y sobre mi-->
+    </header> <!--Se cierra la sección que permite establecer el navegamiento de las dos secciones-->
+
+    <main class="presentacion"> <!-- Contenedor principal de la presentación -->
+        <section class="presentacion__contenido"> <!-- Sección de contenido dentro del main -->
+            
+            <!-- Título principal -->
+            <h1 class="presentacion__contenido__titulo"> <!--Se establece una clase que va a ser llamada en el código de CSS para el estilo--> 
+                Eleve tu negocio digital a otro nivel 
+                <!-- Texto destacado en azul celeste -->
+                <strong class="titulo-destaque"> con un Front-end de calidad!</strong> <!--Por medio de la etiqueta strong que es la que aplica la negrilla a la frase aplicada y se establece una clase que se utilizara en el código CSS-->         
+            </h1>
+
+            <!-- Párrafo con su clase para aplicar estilo desde CSS -->
+            <p class="presentacion__contenido__parrafo"> <!--Se establece una clase que va a ser llamada en el código de CSS para el estilo-->
+                ¡Hola! Soy Andrés Felipe Barragán Niño, 
+                ingeniero Industrial e Ingeniero en Automatización en formación,
+                me encanta programar en lenguajes como son: Python, HTML, JavaScript, Matlab, C++, Java y CSS. 
+                Te puedo ayudar con tus pequeños negocios y diseñado de páginas web para llevar a cabo buenas ideas. 
+                ¿Hablamos?
+            </p>
+            <div class="presentacion__enlaces"> <!--Se establece una división de las dos referencias-->
+                <h2 class="presentacion__enlaces_subtitulos"> Acceso a mis redes:</h2> <!--Se establece un titulo para las redes sociales-->
+                <!-- Enlaces a redes sociales -->
+                <a class="presentacion__enlaces_link" href="https://www.linkedin.com/in/andr%C3%A9s-felipe-barrag%C3%A1n-ni%C3%B1o/"> <!-- Otro enlace (<a>) que dirige al sitio web de Linkedin. Sirve para enlazar la vida social de la persona. -->
+                    <img src="./assets/linkedin.png"> <!--Se creo una carpeta que es assets para luego poder insertar la imagen de Linkedin-->
+                    Linkedin</a> <!--Cierra el enlace-->
+                <a class="presentacion__enlaces_link" href="https://www.github.com/"> <!-- Otro enlace (<a>) que dirige al sitio web de GitHub. Sirve para enlazar portafolios, repositorios, etc. -->
+                    <img src="./assets/github.png"> <!--Se creo una carpeta que es assets para luego poder insertar la imagen de Github-->
+                    Github</a> <!--Cierra el enlace-->
+            </div>
+        </section> <!-- Fin de la sección de contenido -->
+
+        <!-- Imagen representativa -->
+        <img class="presentacion__imagen" src="./assets/Imagen.png" alt="Imagen de Andrés Felipe Barragán Niño trabajando"> <!-- <img> inserta una imagen en la página. - src indica la ubicación del archivo (en este caso, "Imagen.png"). - alt proporciona un texto alternativo que describe la imagen (muy importante para accesibilidad y SEO). --> 
+    </main> <!-- Fin del contenido principal -->
+
+    <footer class="footer"> <!--Es la etiqueta que se declara en el HTML para que represente la sección que va a representar el pie de página de la página web, pero se establece una clase que se utilizara en el CSS-->
+       <p>Desarrollado por Andés Felipe Barragán Niño</p> <!--Se establece una clase que va a ser llamada en el código de CSS para el estilo--> 
+    </footer> <!--Termina la etiqueta que se declara en el HTML para representar la sección que va a representar el pie de página de la página web-->  
+</body> <!-- Fin del cuerpo -->
+
+</html> <!-- Fin del documento HTML -->
+
+
