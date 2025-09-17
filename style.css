@@ -1,0 +1,121 @@
+/* Importa tipografías desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{ /*Se declaran variables globales en el CSS donde seran utilizadas en las diferentes secciones de código declaradas*/
+    --color-primario: #000000; /*Se declara una variable global para el color primario de la página web que es el negro*/
+    --color-secundario: #F6F6F6; /*Se declara una variable global para el color segundario de la página web que es el gris claro (casi blanco)*/
+    --color-terciario: #22D4FD; /*Se declara una variable global para el color terciario de la página web que es el azul celeste*/
+    --color-cuaterciario: #272727; /*Se declara una variable global para el color cuaterciario de la página web que es el negro tirando a gris*/
+    --fuente-montserrat: "Montserrat", sans serif; /*Se declara una variable global para la fuente de texto que es de Montserrat*/ 
+    --fuente-krona: "Krona One", sans serif; /*Se declara una variable global para la fuente de texto que es de Krona One*/
+}
+
+/* El selector universal (*) quita márgenes y rellenos por defecto */
+* {
+    padding: 0; /* Quita cualquier relleno interno (padding) */
+    margin: 0; /* Quita cualquier margen externo (margin) */
+}
+
+/* Estilos generales del cuerpo */
+body {
+    background-color: var(--color-primario);  /* Se utiliza en el fondo el color negro, pero se utiliza el var para poder acceder a ese color por medio de la declaracion en la variable global que es "--color-primario" */
+    color: var(--color-secundario);             /* Se utiliza en el texto el color gris claro (casi blanco), pero se utiliza el var para poder acceder a ese color por medio de la declaracion en la variable global que es "--color-secundario" */
+    /*height: 100vh;              /* Ocupa toda la altura de la ventana */
+    box-sizing: border-box;     /* Incluye padding y borde dentro del tamaño total de los elementos */
+}
+
+/* Estilo para el texto destacado con <strong> */
+.titulo-destaque { 
+    color: var(--color-terciario);  /* Se utiliza el color azul celeste brillante, pero se utiliza el var para poder acceder a ese color por medio de la declaracion en la variable global que es "--color-terciario" */
+}
+
+/* Contenedor principal con flexbox */
+.presentacion {
+    display: flex;               /* Activa flexbox para alinear elementos */
+    align-items: center;         /* Centra verticalmente */
+    padding: 6% 15%;                 /*Se rellena un 7% arriba y abajo y un 15% a los lados que van a basarse en el ancho de ese contenedor*/
+    justify-content: space-between; /* Espacio entre el texto y la imagen */
+}
+
+/* Sección de contenido con un ancho fijo */
+.presentacion__contenido {
+    width: 615px; /* Ancho fijo de 615 píxeles */
+    display: flex; /* Convierte el contenedor en un contenedor flexible (Flexbox) */
+    flex-direction: column; /* Organiza los elementos hijos en columna (uno debajo del otro) */
+    gap: 40px; /* Espacio de 40px entre cada hijo del contenedor */
+}
+
+/* Estilo del título principal */
+.presentacion__contenido__titulo {
+    font-size: 36px;                 /* Se utiliza un tamaño de letra grande */
+    font-family: var(--fuente-krona); /* Se utiliza la fuente Krona One, pero se utiliza el var para poder acceder a ese estilo de fuente de letra por medio de la declaracion en la variable global que es "--fuente-krona" */
+}
+
+/* Estilo del parrafo */
+.presentacion__contenido__parrafo {
+    font-family: var(--fuente-montserrat); /* Se utiliza la fuente Montserrat, pero se utiliza el var para poder acceder a ese estilo de fuente de letra por medio de la declaracion en la variable global que es "--fuente-montserrat" */
+    font-size: 24px;                        /* Tamaño de letra más grande */
+}
+/* Insercción de los botones de los dos enlaces */
+.presentacion__enlaces{
+   display:  flex; /* Activa Flexbox en el contenedor */
+   justify-content: space-between; /* Coloca los hijos alineados en fila (por defecto) y reparte el espacio sobrante de manera que el primer hijo quede a la izquierda, el último a la derecha, y los demás se distribuyan equitativamente entre ellos */
+   flex-direction: column; /*Se establece los botones de los enlaces de manera vertical*/
+   align-items: center; /*Como el ya no es el eje horizontal, sino se toma es el vertical se debe utilizar esta función para centrar los botones de los enlaces a la redes sociale*/ 
+   gap: 32px;   /*Esto permite realizar la separación de un botón con respecto al otro a 32 pixeles de distancia*/                          
+}
+/* Estilo de los botones de los dos enlaces */
+.presentacion__enlaces_link{
+    width: 378px; /* Ancho fijo del botón/enlace */
+    /*background-color: #22D4FD; /* Fondo celeste brillante */
+    text-align: center; /* Centra el texto dentro del botón */
+    padding: 21.5px 0; /* Relleno arriba/abajo de 21.5px y a los lados 0 */
+    border-radius: 8px; /* Bordes redondeados (botón con esquinas suaves) */
+    font-family: var(--fuente-montserrat); /* Se utiliza la fuente Montserrat, pero se utiliza el var para poder acceder a ese estilo de fuente de letra por medio de la declaracion en la variable global que es "--fuente-montserrat" */
+    font-size: 24px; /* Se utiliza un tamaño de letra grande */
+    font-weight: 600; /* Se utiliza la letra seminegrita */
+    text-decoration: none; /* Quita el subrayado (si es un enlace <a>) */
+    border: 2px solid var(--color-terciario); /*Se define un recuadro del boton con un grosor de los botones de enlaces de 2 pixeles, el solid permite realizar el estilo del borde que significan que va a ser una línea continua y se aplica en ese borde un color celeste brillante, pero se utiliza el var para poder acceder a ese color por medio de la declaracion en la variable global que es "--color-terciario" */
+    display: flex; /* Se activa el Flexbox en el contenedor */
+    justify-content: center; /*Como el ya no es el eje horizontal, sino se toma es el vertical se debe utilizar esta función para centrar los botones de los enlaces a la redes sociale*/ 
+    gap: 10px; /*Esto permite realizar la separación de un botón con respecto al otro a 10 pixeles de distancia*/
+    color: var(--color-secundario) /* Se utiliza un texto en blanco, pero se utiliza el var para poder acceder a ese color por medio de la declaracion en la variable global que es "--color-secundario"*/
+}
+/* Estilo de la imagen de presentación */
+.presentacion__imagen {
+    width: 500px;   /* Ancho reducido a 500 píxeles */
+    height: 500px;  /* Alto reducido a 500 píxeles */
+    object-fit: cover; /* Mantiene la proporción sin deformar la imagen */
+}
+.presentacion__enlaces_subtitulos{
+    font-family: var(--fuente-krona); /*Se utiliza la fuente Krona One, pero se utiliza el var para poder acceder a ese estilo de fuente de letra por medio de la declaracion en la variable global que es "--fuente-krona"*/
+    font-size: 24px; /*Se utiliza un tamaño de letra*/
+    font-weight: 400; /*Se utiliza la letra seminegrita*/
+}
+.presentacion__enlaces_link:hover{/*Se utiliza una clase ya existente pero se le aplica la propiedad de hover con el objetivo de cambiar de color los botones de los enlaces cada vez que el usuario se pare encima de el*/
+    background-color: var(--color-cuaterciario); /*Se cambia de color los botones de enlace, pero se utiliza el var para poder acceder a ese color por medio de la declaracion en la variable global que es "--color-cuaternario"*/
+}
+.footer{
+    background-color: var(--color-terciario); /* Se utiliza en el fondo el color azul celeste, pero se utiliza el var para poder acceder a ese color por medio de la declaracion en la variable global que es "--color-terciario" */
+    padding: 24px; /*Se utiliza este valor de 24 pixeles que se aplica por igual en los cuatro lados del elemento que en este caso es "Desarrollado por Andrés Felipe Barragán Niño"*/ 
+    color: var(--color-primario); /* Se utiliza en el texto el color negro, pero se utiliza el var para poder acceder a ese color por medio de la declaracion en la variable global que es "--color-primario"*/ 
+    text-align: center; /* Centra el texto dentro del botón */
+    font-family: var(--fuente-montserrat); /* Se utiliza la fuente Montserrat, pero se utiliza el var para poder acceder a ese estilo de fuente de letra por medio de la declaracion en la variable global que es "--fuente-montserrat"*/ 
+    font-size: 24px; /*Se utiliza un tamaño de letra*/
+    font-weight: 400; /*Se utiliza la letra seminegrita*/
+}
+.header{
+    padding: 2% 0% 0% 15%; /*Se rellena un 2% arriba, un 0% a la derecha, un 0% a la izquierda y un 15% a la izquierda, esto aplicado en función del ancho del contenedor*/
+
+}
+.header__menu{
+    display: flex; /*Se activa el Flexbox en el contenedor*/
+    gap: 80px; /*Esto permite realizar la separación de un botón con respecto al otro a 80 pixeles de distancia*/
+}
+.header__menu__link{
+    font-family: var(--fuente-montserrat); /* Se utiliza la fuente Montserrat, pero se utiliza el var para poder acceder a ese estilo de fuente de letra por medio de la declaracion en la variable global que es "--fuente-montserrat"*/ 
+    font-size: 24px; /*Se utiliza un tamaño de letra*/ 
+    font-weight: 600; /*Se utiliza la letra seminegrita*/
+    color: var(--color-terciario); /* Se utiliza en el fondo el color azul celeste, pero se utiliza el var para poder acceder a ese color por medio de la declaracion en la variable global que es "--color-terciario" */
+    text-decoration: none; /* Quita el subrayado (si es un enlace <a>) */
+}
